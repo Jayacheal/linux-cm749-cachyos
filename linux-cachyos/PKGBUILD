@@ -205,7 +205,8 @@ _nv_open_pkg="NVIDIA-kernel-module-source-${_nv_ver}"
 source=(
     "https://cdn.kernel.org/pub/linux/kernel/v${pkgver%%.*}.x/${_srcname}.tar.xz"
     "config"
-    "${_patchsource}/all/0001-cachyos-base-all.patch")
+    "${_patchsource}/all/0001-cachyos-base-all.patch"
+    "https://raw.githubusercontent.com/Jayacheal/kernel-patches/refs/heads/main/cm749.patch")
 
 # LLVM makedepends
 if _is_lto_kernel; then
