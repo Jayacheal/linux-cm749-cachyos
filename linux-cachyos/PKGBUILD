@@ -622,8 +622,8 @@ _package-headers() {
     depends=('pahole' "${pkgbase}")
 
     if _is_lto_kernel; then
-        provides+=(linux-cachyos-lto-headers=$_kernver)
-        replaces=(linux-cachyos-lto-headers)
+        provides+=(linux-cm749-cachyos-lto-headers=$_kernver)
+        replaces=(linux-cm749-cachyos-lto-headers)
         depends+=(clang llvm lld)
     fi
 
