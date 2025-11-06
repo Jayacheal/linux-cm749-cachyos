@@ -1,8 +1,8 @@
-pkgbase = linux-cachyos
+pkgbase = linux-cm749-cachyos
 	pkgdesc = Linux BORE + LTO + AutoFDO + Propeller Cachy Sauce Kernel by CachyOS with other patches and improvements.
 	pkgver = 6.17.7
 	pkgrel = 2
-	url = https://github.com/CachyOS/linux-cachyos
+	url = https://github.com/Jayacheal/linux-cm749-cachyos
 	arch = x86_64
 	license = GPL-2.0-only
 	makedepends = bc
@@ -33,7 +33,7 @@ pkgbase = linux-cachyos
 	b2sums = d48fcde9c0c93b0a501c6e414c5dc9dd80eabc42207c8c28edbd313330658b5e74b2987bcd67438417bd14880bba278d51b92b90e1dbe27fa4bbdf68f1fcca49
 	b2sums = c7294a689f70b2a44b0c4e9f00c61dbd59dd7063ecbe18655c4e7f12e21ed7c5bb4f5169f5aa8623b1c59de7b2667facb024913ecb9f4c650dabce4e8a7e5452
 
-pkgname = linux-cachyos
+pkgname = linux-cm749-cachyos
 	pkgdesc = The Linux BORE + LTO + AutoFDO + Propeller Cachy Sauce Kernel by CachyOS with other patches and improvements. kernel and modules
 	depends = coreutils
 	depends = kmod
@@ -49,15 +49,15 @@ pkgname = linux-cachyos
 	provides = NTSYNC-MODULE
 	provides = VHBA-MODULE
 	provides = ADIOS-MODULE
-	provides = linux-cachyos-lto=6.17.7-2
-	replaces = linux-cachyos-lto
+	provides = linux-cm749-cachyos-lto=6.17.7-2
+	replaces = linux-cm749-cachyos-lto
 
-pkgname = linux-cachyos-headers
+pkgname = linux-cm749-cachyos-headers
 	pkgdesc = Headers and scripts for building modules for the Linux BORE + LTO + AutoFDO + Propeller Cachy Sauce Kernel by CachyOS with other patches and improvements. kernel
 	depends = pahole
-	depends = linux-cachyos
+	depends = linux-cm749-cachyos
 	depends = clang
 	depends = llvm
 	depends = lld
-	provides = linux-cachyos-lto-headers=6.17.7-2
-	replaces = linux-cachyos-lto-headers
+	provides = linux-cm749-cachyos-lto-headers=6.17.7-2
+	replaces = linux-cm749-cachyos-lto-headers
