@@ -593,8 +593,8 @@ _package() {
     provides=(VIRTUALBOX-GUEST-MODULES WIREGUARD-MODULE KSMBD-MODULE V4L2LOOPBACK-MODULE NTSYNC-MODULE VHBA-MODULE ADIOS-MODULE)
     # Replace LTO kernel with the default kernel
     if _is_lto_kernel; then
-        provides+=(linux-cachyos-lto=$_kernver)
-        replaces=(linux-cachyos-lto)
+        provides+=(linux-cm749-cachyos-lto=$_kernver)
+        replaces=(linux-cm749-cachyos-lto)
     fi
 
     cd "$_srcname"
